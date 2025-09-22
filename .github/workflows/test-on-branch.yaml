@@ -2,12 +2,7 @@ name: CI-Test-On-Branch
 
 on:
   workflow_dispatch:
-    inputs:
-      branch:
-        description: "Branch to test"
-        default: main
-        type: string
-        required: true
+
 
 jobs:
   test:
@@ -15,8 +10,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: ${{ inputs.branch }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
