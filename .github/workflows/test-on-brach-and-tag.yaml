@@ -1,4 +1,4 @@
-name: CI-Test-B_T
+name: CI-Test-On-Branch-And-Tag
 
 on:
   workflow_dispatch:
