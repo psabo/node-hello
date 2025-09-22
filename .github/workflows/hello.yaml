@@ -1,9 +1,9 @@
-name: CI
+name: CI-Hello
 
 on: [push]
 
 jobs:
-  build:
+  hello:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
