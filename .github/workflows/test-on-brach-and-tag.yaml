@@ -24,7 +24,7 @@ jobs:
 
   tag-commit:
     runs-on: ubuntu-latest
-    needs: tests
+    needs: test
     permissions: write-all
     outputs:
       build_number: ${{ steps.buildnumber.outputs.build_number }}
